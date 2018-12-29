@@ -1,2 +1,2 @@
-var hello:string = "hello"
+let hello:string = "hello"
 console.log(hello)
