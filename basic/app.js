@@ -33,3 +33,5 @@ var Alex = {
     }
 };
 console.log(Alex.getData());
+//test noImplicitAny flag: with true and with false no errors
+var test; //it must be: let test: any;

@@ -51,3 +51,5 @@ let Alex: Programmer = {
 
 console.log(Alex.getData())
 
+//test noImplicitAny flag: with true and with false no errors
+let test;//it must be: let test: any;
