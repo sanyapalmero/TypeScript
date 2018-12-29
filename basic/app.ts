@@ -16,3 +16,38 @@ BoolArray3 = [true, false]
 //tuples
 let tuple1: [number, string] = [1, "1"];
 let tuple2: [boolean, number, string] = [true, 1, "1"];
+
+//functions
+function sum(a:number, b:number):number
+{
+    return a+b;
+}
+console.log(sum(5,7))
+
+const sum2 = () => 5 + 3;
+console.log(sum2())
+
+//objects
+type Programmer = {
+    name: string,
+    age: number, 
+    languages: string[], 
+    github: string, 
+    status?: string,// ? - optional field
+    getData: () => string
+}
+
+let Alex: Programmer = {
+    name: 'Alexandr',
+    age: 21,
+    languages: ['Python, C#, TypeScript'],
+    github: 'https://github.com/sanyapalmero',
+    status: 'working',
+    getData():string{
+        let data: string = `name: ${this.name}, age: ${this.age}, status: ${this.status}`;
+        return data;
+    }
+}
+
+console.log(Alex.getData())
+
