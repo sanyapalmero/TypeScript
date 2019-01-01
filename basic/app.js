@@ -1,3 +1,4 @@
+"use strict";
 //basic types
 var str = "string type";
 var num = 1;
@@ -35,3 +36,22 @@ var Alex = {
 console.log(Alex.getData());
 //test noImplicitAny flag: with true and with false no errors
 var test; //it must be: let test: any;
+//enum
+var Languages;
+(function (Languages) {
+    Languages[Languages["Python"] = 0] = "Python";
+    Languages[Languages["TypeScript"] = 1] = "TypeScript";
+    Languages[Languages["JavaScript"] = 2] = "JavaScript";
+})(Languages || (Languages = {}));
+var lang1 = Languages.Python;
+console.log(lang1);
+//never 
+function ThrowNewError(error) {
+    throw new Error(error);
+}
+//null
+var newVar;
+newVar = null; //undefined and null
+var number = 5;
+number = null;
+//# sourceMappingURL=app.js.map

@@ -53,3 +53,25 @@ console.log(Alex.getData())
 
 //test noImplicitAny flag: with true and with false no errors
 let test;//it must be: let test: any;
+
+//enum
+enum Languages {
+    Python,
+    TypeScript,
+    JavaScript
+}
+
+let lang1 = Languages.Python;
+console.log(lang1)
+
+//never 
+function ThrowNewError(error: string): never{
+    throw new Error(error);
+}
+
+//null
+let newVar;
+newVar = null; //undefined and null
+
+let number: number | null = 5;
+number = null;
