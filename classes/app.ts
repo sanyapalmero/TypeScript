@@ -5,11 +5,11 @@ abstract class Programmer {
     taskLevel: number;
     salary: string;
 
-    constructor (name: string, age: number, tasks: string[], taslLevel: number, salary: string) {
+    constructor (name: string, age: number, tasks: string[], taskLevel: number, salary: string) {
         this.name = name;
         this.age = age;
         this.tasks = tasks;
-        this.taskLevel = taslLevel;
+        this.taskLevel = taskLevel;
         this.salary = salary;
     }
     
